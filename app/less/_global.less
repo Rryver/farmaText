@@ -1,0 +1,44 @@
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+    font-family: @font-family-common;
+    font-weight: @font-weight-semi-bold;
+    color: @color-font-black;
+    background: @color-grey;
+}
+
+section {
+    background: @color-grey;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0;
+    background: @color-font-white;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    section {
+        background: @color-font-white;
+    }
+}

@@ -1,0 +1,26 @@
+.footer {
+    display: none;
+    background: @color-light-grey;
+    padding: 11px;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__text {
+        .font-body-2();
+    }
+
+    &__icon {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: block;
+    }
+}

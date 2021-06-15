@@ -1,0 +1,108 @@
+.preview {
+    position: relative;
+    background: linear-gradient(to top, @color-dark-green, @color-green);
+    width: 100%;
+
+    &__circle {
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 71px;
+        //width: 100%;
+        //height: 100%;
+        width: 398px;
+        height: 398px;
+        background: @color-green;
+        border-radius: 50%;
+    }
+
+    &__image {
+        display: inline-block;
+        position: absolute;
+        left: 57px;
+        top: 212px;
+        background: transparent;
+    }
+
+    &__paralell {
+        display: inline-block;
+        position: absolute;
+        transform-origin: bottom left;
+        left: 185px;
+        width: 100%;
+        max-width: 232px;
+        height: 100%;
+        background: @color-font-white;
+        opacity: 0.1;
+        transform: skew(-15deg);
+        -webkit-transform: skew(-15deg);
+        -moz-transform: skew(-15deg);
+        -o-transform: skew(-15deg);
+    }
+
+    &__caption {
+        .font-body-2();
+        display: inline-block;
+        position: absolute;
+        color: @color-font-white;
+
+        &_left-top {
+            top: 40px;
+            left: 40px;
+        }
+
+        &_left-bottom {
+            left: 40px;
+            bottom: 35px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .preview {
+        background: @color-font-white;
+        text-align: center;
+
+        &__circle {
+            display: block;
+            position: unset;
+            top: unset;
+            left: unset;
+            width: 202px;
+            height: 202px;
+            margin: 9px auto 0;
+        }
+
+        &__image {
+            display: block;
+            width: 223px;
+            height: 122px;
+            top: 83px;
+            left: 15px;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        &__paralell {
+            display: none;
+        }
+
+        &__captions {
+            text-align: left;
+        }
+
+        &__caption {
+            display: inline-block;
+            position: unset;
+            top: unset;
+            left: unset;
+            bottom: unset;
+            color: @color-font-black;
+
+            &_left-bottom {
+                float: right;
+            }
+        }
+    }
+}

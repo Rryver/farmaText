@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+<header class="header"></header>
+
+
+<div class="wrapper">
+  <main class="main">
+    <section class="offer">
+      <div class="container">
+        <div class="offer__flex-container">
+          <div class="offer__preview preview">
+            <div class="preview__captions">
+              <span class="preview__caption preview__caption_left-top">Reduslim</span>
+              <span class="preview__caption preview__caption_left-bottom">ECO</span>
+            </div>
+            <div class="preview__circle"></div>
+            <img class="preview__image" src="images/tablets.png" alt="image">
+            <div class="preview__paralell"></div>
+          </div>
+
+          <div class="offer__order">
+            <h2 class="offer__title">Сделай шаг
+              к выздоровлению</h2>
+            <div class="offer__content">
+              <form action="" class="offer__form-order form-order">
+                <label class="form-order__label" for="">
+                  ВАШЕ <span class="form-order form-order__text_green">ИМЯ</span>
+                </label>
+                <input class="form-order__input" type="text" placeholder="Алексей">
+                <label class="form-order__label" for="">
+                  ВАШ <span class="form-order form-order__text_green">ТЕЛЕФОН</span>
+                </label>
+                <input class="form-order__input form-order__input_phone" type="number" placeholder="+7 (123) 456-78-90">
+
+                <div class="form-order__country-picker country-picker">
+                  <select class="country-picker__select">
+                    <option class="country-picker__option" img-src="images/icons/ru.svg" value="ru">RU</option>
+                    <option class="country-picker__option" img-src="images/icons/usa.svg" value="usa">USA</option>
+                  </select>
+
+                  <button class="form-order__input country-picker__btn-fake" type="button" value="">
+                    <div class="country-picker__btn-content">
+                      <span class="country-picker__item-text">RU</span>
+                      <img class="country-picker__item-icon" src="images/icons/ru.svg" alt="ru">
+                    </div>
+                    <img class="country-picker__item-chevron" src="images/icons/chevron-down.svg" alt="">
+                  </button>
+                  <ul class="country-picker__list-fake">
+                    <!--                    <li class="country-picker__item">-->
+                    <!--                      <span class="country-picker__item-text">RU</span>-->
+                    <!--                      <img class="country-picker__item-icon" src="images/icons/ru.svg" alt="ru">-->
+                    <!--                    </li>-->
+                  </ul>
+                </div>
+
+                <button class="form-order__btn" type="submit">
+                  Заказать<img class="form-order__btn-image" src="images/icons/arrow-right.svg" alt="">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <span class="footer__text">Trusted</span>
+        <img class="footer__icon" src="images/icons/lock.svg" alt="">
+        <span class="footer__text">Secure</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
